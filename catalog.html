@@ -59,16 +59,83 @@
               </fieldset>
               <fieldset>
                 <legend class="filters__title">Стоимость, ₽:</legend>
-                <label><input type="text" class="filters__slider" name="min" value="0">от</label>
-                <label><input type="text" class="filters__slider" name="max" value="9000">до</label>
-                <input type="text" class="filters__slider" name="slider-value" min="0" max="9000" value="6750">
+                <label><input type="text" class="filters__slider" name="price" value="0">от</label>
+                <label><input type="text" class="filters__slider" name="price" value="9000">до</label>
+                <input type="text" class="filters__slider" name="price" min="0" max="9000" value="6750">
               </fieldset>
               <button type="submit" name="btn-apply">Применить</button>
               <button type="reset" name="btn-reset">Сбросить</button>
             </form>
-
         </section>
+        <section class="search-results">
+          <span class="search-results__found">Найдено гостиниц: 38</span>
+          <form class="filter-by-price" action="https://echo.htmlacademy.ru/" method="post">
+            <select name="filter-by-price" size="2">
+              <option value="Сначала дешевые">Сначала дешевые</option>
+              <option value="Сначала дорогие">Сначала дорогие</option>
+            </select>
+          </form>
+          <ul class="sorting">
+            <li class="sorting__item">
+              <button type="button" class="sorting__icons" name="sorting__btn" value="icons"></button>
+            </li>
+            <li class="sorting__item">
+              <button type="button" class="sorting__tile" name="sorting__btn" value="tile"></button>
+            </li>
+            <li class="sorting__item">
+              <button type="button" class="sorting__list" name="sorting__btn" value="list"></button>
+            </li>
+          </ul>
 
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <img src="" alt="">
+              <h2 class="catalog__item__title">Amara Resort & Spa</h2>
+              <span class="catalog__item__text">Гостиница</span>
+              <span class="catalog__item__text">От 4000 ₽</span>
+              <a href="#" class="catalog__item__more">подробнее</a>
+              <button type="submit" name="favorites">в избранное</button>
+              <span class="raiting">Рейтинг: 8,5</span>
+            </li>
+            <li class="catalog__item">
+              <img src="" alt="">
+              <h2 class="catalog__item__title">Villas at Poco Diablo</h2>
+              <span class="catalog__item__text">Гостиница</span>
+              <span class="catalog__item__text">От 5000 ₽</span>
+              <a href="#" class="catalog__item__more">подробнее</a>
+              <button type="submit" name="favorites">в избранное</button>
+              <span class="raiting">Рейтинг: 9,2</span>
+            </li>
+            <li class="catalog__item">
+              <img src="" alt="">
+              <h2 class="catalog__item__title">Desert Quail Inn</h2>
+              <span class="catalog__item__text">Гостиница</span>
+              <span class="catalog__item__text">От 2500 ₽</span>
+              <a href="#" class="catalog__item__more">подробнее</a>
+              <button type="submit" name="favorites">в избранное</button>
+              <span class="raiting">Рейтинг: 6,9</span>
+            </li>
+            <li class="catalog__item">
+              <img src="" alt="">
+              <h2 class="catalog__item__title">GreenTree Inn</h2>
+              <span class="catalog__item__text">Гостиница</span>
+              <span class="catalog__item__text">От 1500 ₽</span>
+              <a href="#" class="catalog__item__more">подробнее</a>
+              <button type="submit" name="favorites">в избранное</button>
+              <span class="raiting">Рейтинг: 5,0</span>
+            </li>
+          </ul>
+          <div class="catalog-pages">
+            <ul class="catalog-pages__list">
+              <li class="catalog-pages__item">1</li>
+              <li class="catalog-pages__item">2</li>
+              <li class="catalog-pages__item">3</li>
+              <li class="catalog-pages__item">4</li>
+              <li class="catalog-pages__item">...</li>
+              <li class="catalog-pages__item">10</li>
+            </ul>
+          </div>
+        </section>
 
 
 
