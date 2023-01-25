@@ -31,10 +31,40 @@
             <form class="filters__form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset>
                 <legend class="filters__title">Инфраструктура:</legend>
-                <label><input type="checkbox" class="filters__item" name="infrastructure" value="pool">Бассейн</label>
-                <label><input type="checkbox" class="filters__item" name="infrastructure" value="parking">Парковка</label>
-                <label><input type="checkbox" class="filters__item" name="infrastructure" value="wi-fi">Wi-Fi</label>
+                <ul class="filters__list">
+                  <li class="filters__list__item">
+                    <label><input type="checkbox" class="filters__item" name="infrastructure" value="pool">Бассейн</label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label><input type="checkbox" class="filters__item" name="infrastructure" value="parking">Парковка</label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label><input type="checkbox" class="filters__item" name="infrastructure" value="wi-fi">Wi-Fi</label>
+                  </li>
+                </ul>
               </fieldset>
+              <fieldset>
+                <legend class="filters__title">Тип жилья:</legend>
+                <ul  class="filters__list">
+                  <li class="filters__list__item">
+                    <label><input type="checkbox" class="filters__item" name="housing" value="hostel">Гостиница</label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label><input type="checkbox" class="filters__item" name="housing" value="motel">Мотель</label>
+                  </li>
+                  <li class="filters__list__item">
+                    <label><input type="checkbox" class="filters__item" name="housing" value="apart">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend class="filters__title">Стоимость, ₽:</legend>
+                <label><input type="text" class="filters__slider" name="min" value="0">от</label>
+                <label><input type="text" class="filters__slider" name="max" value="9000">до</label>
+                <input type="text" class="filters__slider" name="slider-value" min="0" max="9000" value="6750">
+              </fieldset>
+              <button type="submit" name="btn-apply">Применить</button>
+              <button type="reset" name="btn-reset">Сбросить</button>
             </form>
 
         </section>
