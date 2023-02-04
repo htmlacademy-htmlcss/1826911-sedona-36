@@ -5,6 +5,7 @@
     <title>
       HTML Academy: Седона
     </title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="container">
@@ -34,18 +35,24 @@
         </nav>
         <ul class="user-menu">
           <li class="user-menu__item">
-            <a href="#">
-              <span class="visually-hidden">Поиск</span>
+            <a class="user-menu__search" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
             </a>
           </li>
           <li class="user-menu__item">
-            <a href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span>12</span>
+            <a class="user-menu__favorites" href="#">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+              <span class="favorites__meter">
+                12
+              </span>
             </a>
           </li>
           <li class="user-menu__item">
-            <a href="#" class="user-menu__button">
+            <a href="#" class="button user-menu__button">
               Хочу сюда!
             </a>
           </li>
@@ -74,7 +81,7 @@
           <div class="advantage__items">
             <ul class="advantage__list">
               <li class="advantage__item advantage__item_theme_dark">
-                <h3 class="description__title">
+                <h3 class="description__title advantage__item_theme_dark">
                   Настоящий городок
                 </h3>
                 <p class="description__text">
@@ -108,7 +115,7 @@
               </li>
               <li class="advantage__item advantage__item_theme_dark">
                 <img src="images/index/photo-2.jpg" width="800" height="385" alt="Вид на мост дьявола">
-                <h3 class="description__title">
+                <h3 class="description__title advantage__item_theme_dark">
                   Там есть мост дьявола
                 </h3>
                 <p class="description__text">
@@ -127,7 +134,7 @@
             Опытный персонал и качественное обслуживание!
           </p>
           <ul class="recomendations__list">
-            <li class="recomendations__item advantage__item_theme_medial">
+            <li class="recomendations__item advantage__item_theme_medial icon-home">
               <h3 class="description__title">
                 Жильё
               </h3>
@@ -135,7 +142,7 @@
                 Рекомендуем пожить в настоящем мотеле, всё как в кино!
               </p>
             </li>
-            <li class="recomendations__item advantage__item_theme_light">
+            <li class="recomendations__item advantage__item_theme_light icon-food">
               <h3 class="description__title">
                 Еда
               </h3>
@@ -143,7 +150,7 @@
                 Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
-            <li class="recomendations__item advantage__item_theme_medial">
+            <li class="recomendations__item advantage__item_theme_medial icon-souvenirs">
               <h3 class="description__title">
                 Сувениры
               </h3>
@@ -156,7 +163,7 @@
 <!-- section "Hotel-search" -->
         <section class="hotel-search">
           <h2 class="visually-hidden">
-            Поис отелей
+            Поиск отелей
           </h2>
           <span class="tagline__title">
             Заинтересовались?
@@ -164,7 +171,7 @@
           <p class="tagline__text">
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a href="catalog.html" class="hotel-search__button">
+          <a href="catalog.html" class="button hotel-search__btn">
             Поиск гостинницы в Седоне
           </a>
         </section>
@@ -178,12 +185,12 @@
           </p>
           <form class="subscribe__form" action=" https://echo.htmlacademy.ru/" method="post">
             <label>
-              <input type="email" placeholder="Ваш e-mail" required>
               <span class="visually-hidden">
                 Ваш e-mail
               </span>
+              <input class="email__input" type="email" placeholder="Ваш e-mail" required>
             </label>
-            <button type="submit">
+            <button class="button subscribe__btn" type="submit">
               Подписаться
             </button>
           </form>
@@ -193,22 +200,28 @@
       <footer class="footer">
           <ul class="contact-links">
             <li class="contact-links__item">
-              <a href="https://vk.com/htmlacademy">
-                Vk
+              <a class="vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">
+                  Vk
+                </span>
               </a>
             </li>
             <li class="contact-links__item">
-              <a href="https://t.me/htmlacademy">
-                Telegram
+              <a class="telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">
+                  Telegram
+                </span>
               </a>
             </li>
             <li class="contact-links__item">
-              <a href="https://www.youtube.com/user/htmlacademyru">
-                You-tube
+              <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">
+                  You-tube
+                </span>
               </a>
             </li>
           </ul>
-        <a href="tel:+7(812)812-12-12">
+        <a class="telephone" href="tel:+7(812)812-12-12">
           +7 (812) 812-12-12
         </a>
         <a href="https://htmlacademy.ru">
