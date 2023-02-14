@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="container">
@@ -14,7 +15,7 @@
           </a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">
+              <a href="index.html">
                 Главная
               </a>
             </li>
@@ -33,18 +34,24 @@
 <!-- user-menu -->
         <ul class="user-menu">
           <li class="user-menu__item">
-            <a href="#">
-              <span class="visually-hidden">Поиск</span>
+            <a class="user-menu__search" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
             </a>
           </li>
           <li class="user-menu__item">
-            <a href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span>12</span>
+            <a class="user-menu__favorites" href="#">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+              <span class="favorites__meter">
+                12
+              </span>
             </a>
           </li>
           <li class="user-menu__item">
-            <a href="#" class="user-menu__button">
+            <a href="#" class="button user-menu__button">
               Хочу сюда!
             </a>
           </li>
@@ -59,11 +66,13 @@
           <ul class="breadcrubs">
             <li class="breadcrubs__item">
               <a class="breadcrubs__home" href="index.html">
-                Главная
+                <span class="visually-hidden">Главная</span>
               </a>
             </li>
             <li class="breadcrubs__item">
-              Гостиницы
+              <span class="breadcrubs__hotel">
+                Гостиницы
+              </span>
             </li>
           </ul>
 <!-- filters column 1 -->
@@ -75,19 +84,19 @@
                 <ul class="filters__list">
                   <li class="filters__item">
                     <label>
-                      <input type="checkbox" class="filters__item" name="infrastructure" value="pool">
+                      <input type="checkbox" class="filters__input" name="infrastructure" value="pool">
                       Бассейн
                     </label>
                   </li>
                   <li class="filters__item">
                     <label>
-                      <input type="checkbox" class="filters__item" name="infrastructure" value="parking">
+                      <input type="checkbox" class="filters__input" name="infrastructure" value="parking">
                       Парковка
                     </label>
                   </li>
                   <li class="filters__item">
                     <label>
-                      <input type="checkbox" class="filters__item" name="infrastructure" value="wi-fi">
+                      <input type="checkbox" class="filters__input" name="infrastructure" value="wi-fi">
                       Wi-Fi
                     </label>
                   </li>
@@ -101,19 +110,19 @@
                 <ul  class="filters__list">
                   <li class="filters__item">
                     <label>
-                      <input type="checkbox" class="filters__item" name="housing" value="hostel">
+                      <input type="checkbox" class="filters__input" name="housing" value="hostel">
                       Гостиница
                     </label>
                   </li>
                   <li class="filters__item">
                     <label>
-                      <input type="checkbox" class="filters__item" name="housing" value="motel">
+                      <input type="checkbox" class="filters__input" name="housing" value="motel">
                       Мотель
                     </label>
                   </li>
                   <li class="filters__item">
                     <label>
-                      <input type="checkbox" class="filters__item" name="housing" value="apart">
+                      <input type="checkbox" class="filters__input" name="housing" value="apart">
                       Апартаменты
                     </label>
                   </li>
@@ -127,10 +136,10 @@
               <!-- здесь будет форма -->
               </fieldset>
 
-              <button type="submit" name="btn-apply">
+              <button class="button filters__apply" type="submit" name="btn-apply">
                 Применить
               </button>
-              <button type="reset" name="btn-reset">
+              <button class="button filters__reset" type="reset" name="btn-reset">
                 Сбросить
               </button>
             </form>
@@ -140,12 +149,12 @@
           <h2 class="visually-hidden">
             Результаты поиска
           </h2>
-          <span class="catalog__found">
+          <span class="tagline__title">
             Найдено гостиниц: 38
           </span>
           <!-- filter-by-price -->
-          <form class="filter-by-price" action="https://echo.htmlacademy.ru/" method="post">
-            <select name="filter-by-price" aria-label="Сортировать по цене" >
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <select class="filter-by-price" name="filter-by-price" aria-label="Сортировать по цене" >
               <option value="cheapt">
                 Сначала дешевые
               </option>
@@ -193,13 +202,13 @@
               <span class="catalog__item-text">
                 От 4000 ₽
               </span>
-              <a href="#" class="catalog__item-more">
+              <a href="#" class="catalog__item-more button">
                 подробнее
               </a>
-              <button type="button" name="favorites">
+              <button class="button favorites" type="button" name="favorites">
                 в избранное
               </button>
-              <span class="raiting">
+              <span class="raiting button">
                 Рейтинг: 8,5
               </span>
             </li>
@@ -217,13 +226,13 @@
               <span class="catalog__item-text">
                 От 5000 ₽
               </span>
-              <a href="#" class="catalog__item-more">
+              <a href="#" class="catalog__item-more button">
                 подробнее
               </a>
-              <button type="button" name="favorites">
-                в избранное
+              <button class="button in-favorites" type="button" name="favorites">
+                в избранном
               </button>
-              <span class="raiting">
+              <span class="raiting button">
                 Рейтинг: 9,2
               </span>
             </li>
@@ -241,13 +250,13 @@
               <span class="catalog__item-text">
                 От 2500 ₽
               </span>
-              <a href="#" class="catalog__item-more">
+              <a href="#" class="catalog__item-more button">
                 подробнее
               </a>
-              <button type="button" name="favorites">
+              <button class="button favorites" type="button" name="favorites">
                 в избранное
               </button>
-              <span class="raiting">
+              <span class="raiting button">
                 Рейтинг: 6,9
               </span>
             </li>
@@ -265,13 +274,13 @@
               <span class="catalog__item-text">
                 От 1500 ₽
               </span>
-              <a href="#" class="catalog__item-more">
+              <a href="#" class="catalog__item-more button">
                 подробнее
               </a>
-              <button type="button" name="favorites">
+              <button class="button favorites" type="button" name="favorites">
                 в избранное
               </button>
-              <span class="raiting">
+              <span class="raiting button">
                 Рейтинг: 5,0
               </span>
             </li>
@@ -291,7 +300,7 @@
               <li class="pagination__item">
                 4
               </li>
-              <li class="pagination__item">
+              <li class="pagination__item dots">
                 ...
               </li>
               <li class="pagination__item">
@@ -310,12 +319,12 @@
           </p>
           <form class="subscribe__form" action=" https://echo.htmlacademy.ru/" method="post">
             <label>
-              <input type="email" placeholder="Ваш e-mail" required>
               <span class="visually-hidden">
                 Ваш e-mail
               </span>
+              <input class="email__input" type="email" placeholder="Ваш e-mail" required>
             </label>
-            <button type="submit">
+            <button class="subscribe__btn" type="submit">
               Подписаться
             </button>
           </form>
@@ -323,24 +332,30 @@
       </main>
 <!-- footer -->
       <footer class="footer">
-          <ul class="contact-links">
-            <li class="contact-links__item">
-              <a href="https://vk.com/htmlacademy">
+        <ul class="contact-links">
+          <li class="contact-links__item">
+            <a class="vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">
                 Vk
-              </a>
-            </li>
-            <li class="contact-links__item">
-              <a href="https://t.me/htmlacademy">
+              </span>
+            </a>
+          </li>
+          <li class="contact-links__item">
+            <a class="telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">
                 Telegram
-              </a>
-            </li>
-            <li class="contact-links__item">
-              <a href="https://www.youtube.com/user/htmlacademyru">
+              </span>
+            </a>
+          </li>
+          <li class="contact-links__item">
+            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">
                 You-tube
-              </a>
-            </li>
-          </ul>
-        <a href="tel:+7(812)812-12-12">
+              </span>
+            </a>
+          </li>
+        </ul>
+        <a class="telephone" href="tel:+7(812)812-12-12">
           +7 (812) 812-12-12
         </a>
         <a href="https://htmlacademy.ru">
