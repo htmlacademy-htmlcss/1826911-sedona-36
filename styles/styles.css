@@ -408,10 +408,6 @@ li {
 }
 
 /* карточки отелей */
-.catalog__container {
-
-}
-
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
@@ -423,7 +419,7 @@ li {
 
 .catalog__item {
   width: 340px;
-  height: 438px;
+  min-height: 438px;
   margin-bottom: 20px;
   border: 1px solid #E6E6E6;
 }
