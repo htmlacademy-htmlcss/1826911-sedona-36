@@ -33,14 +33,6 @@ body {
   background-color: #F2F2F2;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-   list-style-type: none;
-}
-
 .button {
   font-family:'PT Sans', sans-serif;
   font-weight: 700;
