@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона - Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -10,10 +10,10 @@
 <!-- header -->
       <header class="header">
         <nav class="nav">
-          <a href="index.html" class="logo">
-              <img src="images/logo.svg" width="140" height="70" alt="Седона.">
+          <a href="index.html" class="logo__link">
+              <img class="logo" src="images/logo.svg" width="140" height="70" alt="Седона.">
           </a>
-          <ul class="nav__list">
+          <ul class="nav__list nav__menu">
             <li class="nav__item">
               <a href="#" class="nav__link">
                 Главная
@@ -32,14 +32,14 @@
           </ul>
           <ul class="user-menu nav__list">
             <li class="nav__item">
-              <a class="nav__icon-search" href="#">
+              <a class="user__link nav__icon-search" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__icon-favorites" href="#">
+              <a class="user__link nav__icon-favorites" href="#">
                 <span class="visually-hidden">
                   Избранное
                 </span>
@@ -49,7 +49,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="button user-menu__button">
+              <a href="#" class="button user-menu__button user__link">
                 Хочу сюда!
               </a>
             </li>
@@ -58,8 +58,8 @@
       </header>
 <!-- main -->
       <main class="main__container">
-        <section class="hotel">
-          <div class="hotel__container">
+        <section class="filters">
+          <div class="filters__container">
             <h1 class="main__title">
               Гостиницы Седоны
             </h1>
@@ -203,21 +203,23 @@
                       Amara Resort & Spa
                     </h3>
                   </a>
-                  <span class="catalog__item-text">
-                    Гостиница
-                  </span>
-                  <span class="catalog__item-text">
-                    От 4000 ₽
-                  </span>
-                  <a href="#" class="catalog__item-more button">
-                    подробнее
-                  </a>
-                  <button class="button favorites" type="button" name="favorites">
-                    в избранное
-                  </button>
-                  <span class="raiting button">
-                    Рейтинг: 8,5
-                  </span>
+                  <div class="catalog__item-interaction">
+                    <span class="catalog__item-text">
+                      Гостиница
+                    </span>
+                    <span class="catalog__item-text">
+                      От 4000 ₽
+                    </span>
+                    <a href="#" class="catalog__item-more button">
+                      подробнее
+                    </a>
+                    <button class="button favorites" type="button" name="favorites">
+                      в избранное
+                    </button>
+                    <span class="raiting button">
+                      Рейтинг: 8,5
+                    </span>
+                  </div>
                 </div>
               </li>
               <!-- hotel 2 -->
@@ -301,38 +303,36 @@
             </ul>
           </div>
 <!-- pagination -->
-          <div class="pagination">
-            <ol class="pagination__list">
-              <li class="pagination__item">
-                <a  class="pagination__link pagination__link_active" href="#">
-                  1
-                </a>
-              </li>
-              <li class="pagination__item">
-                <a  class="pagination__link" href="#">
-                  2
-                </a>
-              </li>
-              <li class="pagination__item">
-                <a  class="pagination__link" href="#">
-                  3
-                </a>
-              </li>
-              <li class="pagination__item">
-                <a  class="pagination__link" href="#">
-                  4
-                </a>
-              </li>
-              <li class="pagination__item dots">
-                ...
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">
-                  10
-                </a>
-              </li>
-            </ol>
-          </div>
+          <ol class="pagination__list">
+            <li class="pagination__item">
+              <a  class="pagination__link pagination__link_active" href="#">
+                1
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a  class="pagination__link" href="#">
+                2
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a  class="pagination__link" href="#">
+                3
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a  class="pagination__link" href="#">
+                4
+              </a>
+            </li>
+            <li class="pagination__item dots">
+              ...
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                10
+              </a>
+            </li>
+          </ol>
         </section>
 <!-- subscribe -->
         <section class="subscribe subscribe__catalog">
@@ -341,7 +341,7 @@
               Подпишитесь на рассылку
             </h2>
             <p class="tagline__text">
-              Только полезная информация и никакого спама, честное бойскаутское!
+              Только полезная информация и никакого спама, честное&nbspбойскаутское!
             </p>
             <form class="subscribe__form" action=" https://echo.htmlacademy.ru/" method="post">
               <label class="subscribe__label">
@@ -350,7 +350,7 @@
                 </span>
                 <input class="email__input" type="email" placeholder="Ваш e-mail" required>
               </label>
-              <button class="subscribe__btn" type="submit">
+              <button class="button subscribe__btn" type="submit">
                 Подписаться
               </button>
             </form>
