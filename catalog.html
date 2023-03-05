@@ -30,16 +30,16 @@
               </a>
             </li>
           </ul>
-          <ul class="user-menu nav__list">
+          <ul class="nav__list nav__user-menu">
             <li class="nav__item">
-              <a class="user__link nav__icon-search" href="#">
+              <a class="nav__user-link nav__icon-search" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
             <li class="nav__item">
-              <a class="user__link nav__icon-favorites" href="#">
+              <a class="nav__user-link nav__icon-favorites" href="#">
                 <span class="visually-hidden">
                   Избранное
                 </span>
@@ -49,7 +49,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="button user-menu__button user__link">
+              <a href="#" class="button nav__button nav__user-link">
                 Хочу сюда!
               </a>
             </li>
@@ -136,10 +136,10 @@
                 <!-- здесь будет форма -->
                 </fieldset>
                 <div class="filters__btn">
-                  <button class="button filters__apply" type="submit" name="btn-apply">
+                  <button class="button filters__btn_apply" type="submit" name="btn-apply">
                     Применить
                   </button>
-                  <button class="button filters__reset" type="reset" name="btn-reset">
+                  <button class="button filters__btn_reset" type="reset" name="btn-reset">
                     Сбросить
                   </button>
                 </div>
@@ -152,12 +152,12 @@
             Результаты поиска
           </h2>
           <div class="catalog__header">
-            <span class="tagline__title catalog__title">
+            <span class="catalog__title tagline-title">
               Найдено гостиниц: 38
             </span>
             <!-- filter-by-price -->
-            <form class="filter-by-price__from" action="https://echo.htmlacademy.ru/" method="post">
-              <select class="filter-by-price" name="filter-by-price" aria-label="Сортировать по цене" >
+            <form class="filter-by-price" action="https://echo.htmlacademy.ru/" method="post">
+              <select class="filter-by-price__select" name="filter-by-price" aria-label="Сортировать по цене">
                 <option value="cheapt">
                   Сначала дешевые
                 </option>
@@ -189,29 +189,27 @@
                   </span>
                 </button>
               </li>
-
             </ul>
           </div>
           <div class="catalog__container">
-
             <ul class="catalog__list">
 <!-- hotel 1 -->
               <li class="catalog__item">
-                <div class="catalog__item-container">
-                  <a href="#" class="catalog__item-link">
-                    <img src="images/catalog/hotel-1.jpg" class="catalog__item-img" width="300" height="212" alt="Amara Resort & Spa.">
-                    <h3 class="catalog__item-title">
+                <div class="item__container">
+                  <a href="#" class="item__link">
+                    <img src="images/catalog/hotel-1.jpg" class="item__img" width="300" height="212" alt="Amara Resort & Spa.">
+                    <h3 class="item__title">
                       Amara Resort & Spa
                     </h3>
                   </a>
-                  <div class="catalog__item-interaction">
-                    <span class="catalog__item-text">
+                  <div class="item__interaction">
+                    <span class="item__text">
                       Гостиница
                     </span>
-                    <span class="catalog__item-text catalog__item-price">
+                    <span class="item__text item__price">
                       От 4000 ₽
                     </span>
-                    <a href="#" class="catalog__item-more button">
+                    <a href="#" class="item__more button">
                       подробнее
                     </a>
                     <button class="button favorites" type="button" name="favorites">
@@ -227,21 +225,21 @@
               </li>
               <!-- hotel 2 -->
               <li class="catalog__item">
-                <div class="catalog__item-container">
-                  <a href="#" class="catalog__item-link">
-                      <img src="images/catalog/hotel-2.jpg" class="catalog__item-img" width="300" height="212" alt="Villas at Poco Diablo.">
-                    <h3 class="catalog__item-title">
+                <div class="item__container">
+                  <a href="#" class="item__link">
+                      <img src="images/catalog/hotel-2.jpg" class="item__img" width="300" height="212" alt="Villas at Poco Diablo.">
+                    <h3 class="item__title">
                       Villas at Poco Diablo
                     </h3>
                   </a>
-                  <div class="catalog__item-interaction">
-                    <span class="catalog__item-text">
+                  <div class="item__interaction">
+                    <span class="item__text">
                       Гостиница
                     </span>
-                    <span class="catalog__item-text catalog__item-price">
+                    <span class="item__text item__price">
                       От 5000 ₽
                     </span>
-                    <a href="#" class="catalog__item-more button">
+                    <a href="#" class="item__more button">
                       подробнее
                     </a>
                     <button class="button in-favorites" type="button" name="favorites">
@@ -257,21 +255,21 @@
               </li>
               <!-- hotel 3 -->
               <li class="catalog__item">
-                <div class="catalog__item-container">
-                  <a href="#" class="catalog__item-link">
-                    <img src="images/catalog/hotel-3.jpg" class="catalog__item-img" width="300" height="212" alt="Desert Quail Inn.">
-                    <h3 class="catalog__item-title">
+                <div class="item__container">
+                  <a href="#" class="item__link">
+                    <img src="images/catalog/hotel-3.jpg" class="item__img" width="300" height="212" alt="Desert Quail Inn.">
+                    <h3 class="item__title">
                       Desert Quail Inn
                     </h3>
                   </a>
-                  <div class="catalog__item-interaction">
-                    <span class="catalog__item-text">
+                  <div class="item__interaction">
+                    <span class="item__text">
                       Гостиница
                     </span>
-                    <span class="catalog__item-text catalog__item-price">
+                    <span class="item__text item__price">
                       От 2500 ₽
                     </span>
-                    <a href="#" class="catalog__item-more button">
+                    <a href="#" class="item__more button">
                       подробнее
                     </a>
                     <button class="button favorites" type="button" name="favorites">
@@ -287,21 +285,21 @@
               </li>
               <!-- hotel 4 -->
               <li class="catalog__item">
-                <div class="catalog__item-container">
-                  <a href="#" class="catalog__item-link">
-                    <img src="images/catalog/hotel-4.jpg" class="catalog__item-img" width="300" height="212" alt="GreenTree Inn.">
-                    <h3 class="catalog__item-title">
+                <div class="item__container">
+                  <a href="#" class="item__link">
+                    <img src="images/catalog/hotel-4.jpg" class="item__img" width="300" height="212" alt="GreenTree Inn.">
+                    <h3 class="item__title">
                       GreenTree Inn
                     </h3>
                   </a>
-                  <div class="catalog__item-interaction">
-                    <span class="catalog__item-text">
+                  <div class="item__interaction">
+                    <span class="item__text">
                       Гостиница
                     </span>
-                    <span class="catalog__item-text catalog__item-price">
+                    <span class="item__text item__price">
                       От 1500 ₽
                     </span>
-                    <a href="#" class="catalog__item-more button">
+                    <a href="#" class="item__more button">
                       подробнее
                     </a>
                     <button class="button favorites" type="button" name="favorites">
@@ -350,12 +348,12 @@
           </ol>
         </section>
 <!-- subscribe -->
-        <section class="subscribe subscribe__catalog">
+        <section class="subscribe subscribe-catalog">
           <div class="subscribe__container">
-            <h2  class="tagline__title">
+            <h2  class="tagline-title">
               Подпишитесь на рассылку
             </h2>
-            <p class="tagline__text">
+            <p class="tagline-text">
               Только полезная информация и никакого спама, честное&nbsp;бойскаутское!
             </p>
             <form class="subscribe__form" action=" https://echo.htmlacademy.ru/" method="post">
@@ -363,7 +361,7 @@
                 <span class="visually-hidden">
                   Ваш e-mail
                 </span>
-                <input class="email__input" type="email" placeholder="Ваш e-mail" required>
+                <input class="email-input" type="email" placeholder="Ваш e-mail" required>
               </label>
               <button class="button subscribe__btn" type="submit">
                 Подписаться
