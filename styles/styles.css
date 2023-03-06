@@ -104,7 +104,7 @@ body {
   position: relative;
 }
 
-.logo__link {
+.nav__logo {
     margin: 0 30px -6px 0;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .nav__button,
-.item__more {
+.catalog__more {
   min-height: 36px;
   width: 160px;
   padding: 8px;
@@ -152,7 +152,7 @@ body {
   background-position: center;
 }
 
-.favorites__meter {
+.nav__meter {
   font-size: 10px;
   line-height: 10px;
   color: #FFFFFF;
@@ -177,6 +177,11 @@ body {
 
 .filters__form {
   display: flex;
+}
+
+.filters__input,
+.filters__item label {
+  cursor: pointer;
 }
 
 .filters__form-infrastructure,
@@ -211,7 +216,7 @@ body {
   height: 36px;
 }
 
-.filters__btn_apply {
+.btn-apply {
   margin-bottom: 32px;
 }
 
@@ -243,7 +248,7 @@ body {
 }
 
 /* main */
-.main__container {
+.main {
   flex-grow: 1;
 }
 
@@ -287,7 +292,7 @@ body {
   font-size: 16px;
 }
 /* titles & texts */
-.tagline-title {
+.title {
   display: inline-block;
   font-weight: 700;
   font-size: 30px;
@@ -298,15 +303,15 @@ body {
   margin: 0 0 20px;
 }
 
-.advantage__header .tagline-title {
+.advantage__title {
   margin-bottom: 25px;
 }
 
-.subscribe__container .tagline-title {
+.subscribe__title {
   display: block;
 }
 
-.tagline-text {
+.text {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
@@ -314,13 +319,13 @@ body {
   color: #333333;
 }
 
-.hotel-search .tagline-text,
-.subscribe__container .tagline-text {
+.hotel-search__text,
+.subscribe__text {
   margin-bottom: 54px;
 }
 
 .description-title,
-.item__title {
+.catalog__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -342,8 +347,9 @@ body {
 }
 /* advantages & recomendations */
 .advantage__header {
-  padding: 69px 274px;
-  margin-bottom: 21px;
+  padding: 69px;
+  margin: 0 auto 21px;
+  max-width: 860px;
 }
 
 .advantage__list {
@@ -368,16 +374,16 @@ body {
   padding: 102px 85px;
 }
 
-.item__theme_dark {
+.dark-theme {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.item__theme_light {
+.light-theme {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.item__theme_medial {
+.medial-theme {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -420,7 +426,7 @@ body {
   display: flex;
   align-items: center;
   width: 1060px;
-  margin: 0 auto 40px;
+  margin: 0 auto 38px;
 }
 
 .catalog__title {
@@ -439,7 +445,7 @@ body {
   line-height: 21px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-
+  cursor: pointer;
 }
 
 .sorting {
@@ -454,6 +460,7 @@ body {
 .sorting__button {
   width: 48px;
   height: 48px;
+  cursor: pointer;
 }
 
 .sorting__item:not(:last-child) {
@@ -489,8 +496,8 @@ body {
 
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
-  gap: 19px 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   padding: 0 70px;
   list-style-type: none;
 }
@@ -498,33 +505,34 @@ body {
 .catalog__item {
   min-height: 438px;
   border: 1px solid #E6E6E6;
-}
-
-.item__container {
   padding: 20px;
 }
 
-.item__link {
+.catalog__link {
   display: inline-block;
   margin-bottom: 16px;
   text-decoration: none;
 }
 
-.item__img {
+.catalog__img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
   margin-bottom: 13px;
 }
 
-.item__interaction {
+.catalog__interaction {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 20px;
 }
 
-.item__price {
+.catalog__price {
   justify-self: end;
 }
 /* Catalog buttons */
-.filters__btn_apply,
+.btn-apply,
 .favorites {
   background-color: #82B3D3;
 }
@@ -533,11 +541,11 @@ body {
   background-color: #7DB54F;
 }
 
-.filters__btn_reset {
+.btn-reset {
   background-color: transparent;
 }
 
-.item__more {
+.catalog__more {
   width: 140px;
   padding: 8px 26px;
 }
@@ -548,7 +556,7 @@ body {
   background-color: #F2F2F2;
 }
 /* pagination */
-.pagination__list {
+.pagination {
   display: flex;
   width: 1060px;
   margin: 0 70px 60px;
@@ -619,12 +627,12 @@ body {
   height: 50px;
 }
 
-.subscribe-catalog .tagline-title {
+.subscribe-catalog .title {
   color: #333333;
 }
 
-.subscribe-index .tagline-title,
-.subscribe-index .tagline-text {
+.subscribe-index .title,
+.subscribe-index .text {
   color: #FFFFFF;
 }
 
@@ -677,7 +685,7 @@ body {
 
 }
 /* footer links */
-.contact-links {
+.social {
   display: flex;
   flex-wrap: wrap;
   max-width: 200px;
