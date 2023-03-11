@@ -10,46 +10,46 @@
 <!-- header -->
       <header class="header">
         <nav class="nav">
-          <a href="index.html" class="logo__link">
+          <a href="index.html" class="nav__logo">
               <img class="logo" src="images/logo.svg" width="140" height="70" alt="Седона.">
           </a>
           <ul class="nav__list nav__menu">
             <li class="nav__item">
-              <a href="#" class="nav__link">
+              <a href="index.html" class="nav__link">
                 Главная
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
+              <a href="index.html#about-sedona" class="nav__link">
                 О Седоне
               </a>
             </li>
             <li class="nav__item">
-              <a href="catalog.html" class="nav__link">
+              <a href="#" class="nav__link">
                 Гостиницы
               </a>
             </li>
           </ul>
-          <ul class="user-menu nav__list">
+          <ul class="nav__list nav__user-menu">
             <li class="nav__item">
-              <a class="user__link nav__icon-search" href="#">
+              <a class="nav__user-link nav__icon-search" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
             <li class="nav__item">
-              <a class="user__link nav__icon-favorites" href="#">
+              <a class="nav__user-link nav__icon-favorites" href="#">
                 <span class="visually-hidden">
                   Избранное
                 </span>
-                <span class="favorites__meter">
+                <span class="nav__meter">
                   12
                 </span>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="button user-menu__button user__link">
+              <a href="#" class="button nav__button nav__user-link">
                 Хочу сюда!
               </a>
             </li>
@@ -57,7 +57,7 @@
         </nav>
       </header>
 <!-- main -->
-      <main class="main__container">
+      <main class="main">
         <section class="filters">
           <div class="filters__container">
             <h1 class="main__title">
@@ -136,10 +136,10 @@
                 <!-- здесь будет форма -->
                 </fieldset>
                 <div class="filters__btn">
-                  <button class="button filters__apply" type="submit" name="btn-apply">
+                  <button class="button btn-apply" type="submit" name="btn-apply">
                     Применить
                   </button>
-                  <button class="button filters__reset" type="reset" name="btn-reset">
+                  <button class="button btn-reset" type="reset" name="btn-reset">
                     Сбросить
                   </button>
                 </div>
@@ -152,12 +152,12 @@
             Результаты поиска
           </h2>
           <div class="catalog__header">
-            <span class="tagline__title catalog__title">
+            <span class="catalog__title title">
               Найдено гостиниц: 38
             </span>
             <!-- filter-by-price -->
-            <form class="filter-by-price__from" action="https://echo.htmlacademy.ru/" method="post">
-              <select class="filter-by-price" name="filter-by-price" aria-label="Сортировать по цене" >
+            <form class="filter-by-price" action="https://echo.htmlacademy.ru/" method="post">
+              <select class="filter-by-price__select" name="filter-by-price" aria-label="Сортировать по цене">
                 <option value="cheapt">
                   Сначала дешевые
                 </option>
@@ -189,61 +189,61 @@
                   </span>
                 </button>
               </li>
-
             </ul>
           </div>
           <div class="catalog__container">
-
             <ul class="catalog__list">
 <!-- hotel 1 -->
               <li class="catalog__item">
-                <div class="catalog__item-container">
-                  <a href="#">
-                    <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa.">
-                    <h3 class="catalog__item-title">
-                      Amara Resort & Spa
-                    </h3>
+                <a href="#" class="catalog__link">
+                  <img class="catalog__img" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa.">
+                  <h3 class="catalog__title">
+                    Amara Resort & Spa
+                  </h3>
+                </a>
+                <div class="catalog__interaction">
+                  <span class="catalog__text">
+                    Гостиница
+                  </span>
+                  <span class="catalog__text catalog__price">
+                    От 4000 ₽
+                  </span>
+                  <a href="#" class="catalog__more button">
+                    подробнее
                   </a>
-                  <div class="catalog__item-interaction">
-                    <span class="catalog__item-text">
-                      Гостиница
-                    </span>
-                    <span class="catalog__item-text">
-                      От 4000 ₽
-                    </span>
-                    <a href="#" class="catalog__item-more button">
-                      подробнее
-                    </a>
-                    <button class="button favorites" type="button" name="favorites">
-                      в избранное
-                    </button>
-                    <span class="raiting button">
-                      Рейтинг: 8,5
-                    </span>
-                  </div>
+                  <button class="button favorites" type="button" name="favorites">
+                    в избранное
+                  </button>
+                  <!-- здесь должны быть звезды -->
+                  <span></span>
+                  <span class="raiting button">
+                    Рейтинг: 8,5
+                  </span>
                 </div>
               </li>
               <!-- hotel 2 -->
               <li class="catalog__item">
-                <div class="catalog__item-container">
-                  <a href="#">
-                      <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo.">
-                    <h3 class="catalog__item-title">
-                      Villas at Poco Diablo
-                    </h3>
-                  </a>
-                  <span class="catalog__item-text">
+                <a href="#" class="catalog__link">
+                    <img class="catalog__img" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo.">
+                  <h3 class="catalog__title">
+                    Villas at Poco Diablo
+                  </h3>
+                </a>
+                <div class="catalog__interaction">
+                  <span class="catalog__text">
                     Гостиница
                   </span>
-                  <span class="catalog__item-text">
+                  <span class="catalog__text catalog__price">
                     От 5000 ₽
                   </span>
-                  <a href="#" class="catalog__item-more button">
+                  <a href="#" class="catalog__more button">
                     подробнее
                   </a>
                   <button class="button in-favorites" type="button" name="favorites">
                     в избранном
                   </button>
+                  <!-- здесь должны быть звезды -->
+                  <span></span>
                   <span class="raiting button">
                     Рейтинг: 9,2
                   </span>
@@ -251,25 +251,27 @@
               </li>
               <!-- hotel 3 -->
               <li class="catalog__item">
-                <div class="catalog__item-container">
-                  <a href="#">
-                    <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn.">
-                    <h3 class="catalog__item-title">
-                      Desert Quail Inn
-                    </h3>
-                  </a>
-                  <span class="catalog__item-text">
+                <a href="#" class="catalog__link">
+                  <img class="catalog__img" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn.">
+                  <h3 class="catalog__title">
+                    Desert Quail Inn
+                  </h3>
+                </a>
+                <div class="catalog__interaction">
+                  <span class="catalog__text">
                     Гостиница
                   </span>
-                  <span class="catalog__item-text">
+                  <span class="catalog__text catalog__price">
                     От 2500 ₽
                   </span>
-                  <a href="#" class="catalog__item-more button">
+                  <a href="#" class="catalog__more button">
                     подробнее
                   </a>
                   <button class="button favorites" type="button" name="favorites">
                     в избранное
                   </button>
+                  <!-- здесь должны быть звезды -->
+                  <span></span>
                   <span class="raiting button">
                     Рейтинг: 6,9
                   </span>
@@ -277,25 +279,27 @@
               </li>
               <!-- hotel 4 -->
               <li class="catalog__item">
-                <div class="catalog__item-container">
-                  <a href="#">
-                    <img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn.">
-                    <h3 class="catalog__item-title">
-                      GreenTree Inn
-                    </h3>
-                  </a>
-                  <span class="catalog__item-text">
+                <a href="#" class="catalog__link">
+                  <img class="catalog__img" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn.">
+                  <h3 class="catalog__title">
+                    GreenTree Inn
+                  </h3>
+                </a>
+                <div class="catalog__interaction">
+                  <span class="catalog__text">
                     Гостиница
                   </span>
-                  <span class="catalog__item-text">
+                  <span class="catalog__text catalog__price">
                     От 1500 ₽
                   </span>
-                  <a href="#" class="catalog__item-more button">
+                  <a href="#" class="catalog__more button">
                     подробнее
                   </a>
                   <button class="button favorites" type="button" name="favorites">
                     в избранное
                   </button>
+                  <!-- здесь должны быть звезды -->
+                  <span></span>
                   <span class="raiting button">
                     Рейтинг: 5,0
                   </span>
@@ -304,7 +308,7 @@
             </ul>
           </div>
 <!-- pagination -->
-          <ol class="pagination__list">
+          <ol class="pagination">
             <li class="pagination__item">
               <a  class="pagination__link pagination__link_active" href="#">
                 1
@@ -336,12 +340,12 @@
           </ol>
         </section>
 <!-- subscribe -->
-        <section class="subscribe subscribe__catalog">
+        <section class="subscribe subscribe-catalog">
           <div class="subscribe__container">
-            <h2  class="tagline__title">
+            <h2  class="subscribe__title title">
               Подпишитесь на рассылку
             </h2>
-            <p class="tagline__text">
+            <p class="subscribe__text text">
               Только полезная информация и никакого спама, честное&nbsp;бойскаутское!
             </p>
             <form class="subscribe__form" action=" https://echo.htmlacademy.ru/" method="post">
@@ -349,7 +353,7 @@
                 <span class="visually-hidden">
                   Ваш e-mail
                 </span>
-                <input class="email__input" type="email" placeholder="Ваш e-mail" required>
+                <input class="email-input" type="email" placeholder="Ваш e-mail" required>
               </label>
               <button class="button subscribe__btn" type="submit">
                 Подписаться
@@ -361,23 +365,23 @@
 <!-- footer -->
       <footer class="footer">
         <div class="footer__container">
-            <ul class="contact-links">
-              <li class="contact-links__item">
-                <a class="vk" href="https://vk.com/htmlacademy">
+            <ul class="social">
+              <li class="social__item">
+                <a class="vk" href="https://vk.com/htmlacademy" target="_blank">
                   <span class="visually-hidden">
                     Vk
                   </span>
                 </a>
               </li>
-              <li class="contact-links__item">
-                <a class="telegram" href="https://t.me/htmlacademy">
+              <li class="social__item">
+                <a class="telegram" href="https://t.me/htmlacademy" target="_blank">
                   <span class="visually-hidden">
                     Telegram
                   </span>
                 </a>
               </li>
-              <li class="contact-links__item">
-                <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <li class="social__item">
+                <a class="youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                   <span class="visually-hidden">
                     You-tube
                   </span>
@@ -387,7 +391,7 @@
           <a class="telephone" href="tel:+7(812)812-12-12">
             +7 (812) 812-12-12
           </a>
-          <a href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru" target="_blank">
             <img src="images/html-academy.svg" width="115" height="33" alt="Компания-разработчик: HTML Academy.">
           </a>
         </div>
