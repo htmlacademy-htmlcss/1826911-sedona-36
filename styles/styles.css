@@ -382,13 +382,13 @@ body {
 
 .breadcrumbs__item {
   position: relative;
-  margin-left: 10px;
+  margin-right: 30px;
 }
 
 .breadcrumbs__item::after {
   position: absolute;
   top: 1px;
-  left: 23px;
+  right: -18px;
   width: 7px;
   height: 10px;
   content: url("../images/catalog/breadcrumbs.svg");
@@ -407,10 +407,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs__home {
-  margin-right: 28px;
-}
-
 .breadcrumbs__icon {
   fill: #FFFFFF;
 }
@@ -426,6 +422,7 @@ body {
 
 .breadcrumbs__hotel {
   font-size: 16px;
+  display: block;
 }
 /* titles & texts */
 .title {
